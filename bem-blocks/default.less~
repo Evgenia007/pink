@@ -1,0 +1,43 @@
+/* DEFAULT */
+
+@import "fonts/fonts.css";
+
+html, body {
+  height: 100%;
+}
+
+html { 
+  font-size: 62.5%; 
+} 
+
+body {
+  font: 14px/1.8em "Noto Serif", sans-serif;
+  color: #000;
+}
+
+button, input, textarea {
+  font: 14px/1.8em "Noto Serif", sans-serif;
+}
+
+ul, ol, li {
+  display: block;
+  padding: 0;
+}
+
+a {
+  &:link, &:visited, &:hover {
+    text-decoration: none;
+  }
+  
+  &:link, &:hover {
+    color: #1f7f5c;
+  }  
+  &:visited {
+    color: #000;
+  }
+  
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}

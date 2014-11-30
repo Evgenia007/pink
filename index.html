@@ -2,101 +2,112 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Pink. Главная 999</title>
+		<title>Pink. Главная</title>
 		<link rel="shortcut icon" href="favicon.ico" />
-		<link href="css/style.css" rel="stylesheet/less">
+		<link href="bem-blocks/style.less" rel="stylesheet/less">
+		<script>
+      less = {
+        env: "development",
+        poll: 1000
+      };
+    </script>
+   	<script src="js/less.min.js"></script>
 	</head>
 	<body>
-		<header class="page__header header">
-			<a class="header_logo logo" href="">
+		<header class="header">
+			<a class="logo" href="">
 				<img class="logo__img" src="images/logo.png" alt="логотип Pink">
 			</a>
-			<nav class="header__nav nav">
-				<a href="#">Один</a>
-				<a href="#">Два</a>
-				<a href="#">Три</a>
+			<nav class="nav">
+				<a class="nav__item" href="#">Один</a>
+				<a class="nav__item" href="#">Два</a>
+				<a class="nav__item" href="#">Три</a>
 			</nav>
 		</header>
 		
-		<section class="page__content content">
+		<section class="content">
 
-			<section class="slogan slogan--main">
+			<div class="slogan slogan--main">
 				<h1 class="slogan__block">Взгляните на жизнь иначе</h1>
-			</section>
-			<a class="content__btn btn" href="#">Скачать приложение</a>
+			</div>
+			<a class="btn" href="#">Скачать приложение</a>
 
-			<section class="devices">
-				<div class="devices__img"></div>
-				<div class="devices__img"></div>
-				<div class="devices__img"></div>
+			<div class="devices">
+				<a class="devices__link devices__link--android" href="#"></a>
+				<a class="devices__link devices__link--macos" href="#"></a>
+				<a class="devices__link devices__link--windows" href="#"></a>
 				<p class="devices__text">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
-			</section>
+			</div>
 
-			<section class="slogan">
+			<div class="slogan">
 				<h2 class="slogan__block">Устали от серости мегаполиса?</h2>
 				<h2 class="slogan__block">Нам есть, что вам  предложить!</h2>
-			</section>
+			</div>
 
-			<section class="advantages">
-				<article class="advantage">
-					<h1 class="advantage__title">Поднимает настроение</h1>
+			<div class="advantages">
+				<div class="advantage">
+					<h2 class="advantage__title">Поднимает настроение</h2>
 					<p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессею буквально в несколько кликов!</p>
-				</article>	
-				<article class="advantages">
-					<h1 class="advantage__title">Меняет мир вокруг</h1>
+				</div>	
+				<div class="advantage">
+					<h2 class="advantage__title">Меняет мир вокруг</h2>
 					<p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-				</article>	
-				<article class="advantages">
-					<h1 class="advantage__title">Заводит новых друзей</h1>
+				</div>	
+				<div class="advantage">
+					<h2 class="advantage__title">Заводит новых друзей</h2>
 					<p class="advantage__text"> Ставьте лайки, комментируте, делитесь фотографиямис друзьями и заводите новых</p>
-				</article class="">	
-			</section>
+				</div>	
+			</div>
 
-			<section class="slider reviews">
-				<article class="slider__item review">
-					<h1 class="review__title">Николай Петров</h1>
-					<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии выложенной фотографии.»</p>
-				</article>	
-				<div clas="reviews__nav slider__nav">
-					<a class="slider__nav-item" href=""></a>
-					<a class="slider__nav-item" href=""></a>
-					<a class="slider__nav-item" href=""></a>
+			<div class="slider">
+				<div class="slider__item js-slider-item">
+					<div class="review">					
+						<h2 class="review__title">Николай Петров</h2>
+						<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии выложенной фотографии.»</p>
+					</div>
+				</div>	
+				<div clas="slider__nav js-slider-nav">
+					<a class="slider__nav-item" href="#"></a>
+					<a class="slider__nav-item" href="#"></a>
+					<a class="slider__nav-item" href="#"></a>
 				</div>
-			</section>
+			</div>
 
-			<section class="slider tarifs">
-				<article class="slider__item tarif">
-					<header class="tarif__header">
-						<span class="tarif__label">Хит</span>
-						<h1 class="tarif__title">Стандарт</h1>
-						<p class="tarif__price">3,99 USD</p>
-					</header>
-					<ul class="tarif__properties">
-						<li class="tarif__properties-item">
-							<p>розовый фильтр</p>
-							<i>Yes</i>
-						</li>
-						<li class="tarif__properties-item">
-							<p>смайлики</p>
-							<i>Yes</i>
-						</li>
-						<li class="tarif__properties-item">
-							<p>комментарии</p>
-							<i>No</i>
-						</li>
-					</ul>
-				</article>
-				<div class="tarifs__nav slider__nav">
-					<a class="slider__nav-item" href=""></a>
-					<a class="slider__nav-item" href=""></a>
-					<a class="slider__nav-item" href=""></a>
+			<div class="slider">
+				<div class="slider__item js-slider-item">
+					<div class="tarif">
+						<header class="tarif__header">
+							<span class="tarif__label">Хит</span>
+							<h2 class="tarif__title">Стандарт</h2>
+							<p class="tarif__price">3,99 USD</p>
+						</header>
+						<ul class="tarif__properties">
+							<li class="tarif__properties-item">
+								<p class="tarif__properties-item-text">розовый фильтр</p>
+								<span class="tarif__properties-item-status">Yes</span>
+							</li>
+							<li class="tarif__properties-item">
+								<p class="tarif__properties-item-text">смайлики</p>
+								<span class="tarif__properties-item-status">Yes</span>
+							</li>
+							<li class="tarif__properties-item">
+								<p class="tarif__properties-item-text">комментарии</p>
+								<span class="tarif__properties-item-status">No</span>
+							</li>
+						</ul>
+					</div>
+					<div class="slider__nav js-slider-nav">
+						<a class="slider__nav-item" href=""></a>
+						<a class="slider__nav-item" href=""></a>
+						<a class="slider__nav-item" href=""></a>
+					</div>
 				</div>
-			</section>
+			</div>
 		</section>
 
-		<footer class="page__footer footer">
-			<section class="footer__contacts contacts">
-				<h1 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h1>
+		<footer class="footer">
+			<div class="contacts">
+				<h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
 				<div class="contacts__block">
 					<h2 class="contacts__block-title">Звоните</h2>
 					<p class="contacts__block-text">8 (800) 1000 900</p>
@@ -109,9 +120,10 @@
 					<h2 class="contacts__block-title">Приезжайте в гости</h2>
 					<p class="contacts__block-text">Санкт-Петербург, Невский проспект, д. 20</p>
 				</div>
-			</section>
-			<div class="footer__map map"></div>
+			</div>
+			<div class="footer__map"></div>
 		</footer>
+
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>

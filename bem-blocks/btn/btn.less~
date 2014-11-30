@@ -1,0 +1,5 @@
+/*Блок кнопок*/
+
+.btn {
+  border: 1px solid red;
+}
